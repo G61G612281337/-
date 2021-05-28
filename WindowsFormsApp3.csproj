@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F45C002C-BC80-447A-801E-F425E3D7C498}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp3</RootNamespace>
+    <AssemblyName>WindowsFormsApp3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\разработка дизайна\Disign\packages\MaterialSkin.2.2.1.4\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckYourAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckYourAnswer.Designer.cs">
+      <DependentUpon>CheckYourAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Complited.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complited.Designer.cs">
+      <DependentUpon>Complited.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConpAssociative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConpAssociative.Designer.cs">
+      <DependentUpon>ConpAssociative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CubeGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CubeGame.Designer.cs">
+      <DependentUpon>CubeGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson1.Designer.cs">
+      <DependentUpon>Lesson1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameAssociative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameAssociative.Designer.cs">
+      <DependentUpon>GameAssociative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameCountPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameCountPI.Designer.cs">
+      <DependentUpon>GameCountPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\GameAssociativeEventButtonConrtol.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CheckYourAnswer.resx">
+      <DependentUpon>CheckYourAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complited.resx">
+      <DependentUpon>Complited.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConpAssociative.resx">
+      <DependentUpon>ConpAssociative.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CubeGame.resx">
+      <DependentUpon>CubeGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson1.resx">
+      <DependentUpon>Lesson1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameAssociative.resx">
+      <DependentUpon>GameAssociative.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameCountPI.resx">
+      <DependentUpon>GameCountPI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-поиск-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-поиск-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-головной-мозг-150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-радуга-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-радуга-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фиолетовыйшоп.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-идея-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-головной-мозг-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-карта-sd-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-улыбающееся-лицо-с-сердечками-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-487724124-170667a %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-главная-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-меню-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-маленькая-улыбка-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-пи-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-пи-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-пи-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-график-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-подмигивающий-документ-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-назад-96 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-пи-100 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-слюни-лицо-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-слюни-лицо-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-смех-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-огонь-144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-собака-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-кошка-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-рукопожатие-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-динозавр-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-медвежий-след-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-поцелуй-панды-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-поцелуй-панды-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-силуэт-крысы-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-акула-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-черный-ягуар-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-черный-ягуар-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-пиксельный-кот-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-кошачьи-опекуны-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-октаэдр-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-кубик-рубика-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-кубик-рубика-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-квадрат-числа-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-планета-земля-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-бильярдный-шар-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-черно-белое-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-workspace-one-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-длинная-стрелка-вправо-48.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
